@@ -10,11 +10,17 @@ In your teams, discuss, and write a plan for, and set up the following:
 
 DIRECTORY STRUCTURE: 
 Where will you store your scripts? 
+
+	Git remote repository (James) and cloned to both team member pearcy home directories   
+
+
 	File structure:
 		big_data_practical
-		scripts
+			scripts
+
 Where is the raw data?
 	/OSM/CBR/AF_DATASCHOOL/input/2019-04-12_Transcritome>
+
 What about intermediate analyses?
 	
 How do the project directory structures we have used previously (e.g. 

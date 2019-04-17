@@ -1,0 +1,24 @@
+#!/bin/bash -l
+
+#SBATCH --job-name=big_data_prac
+
+#SBATCH --nodes=1
+
+#SBATCH --ntasks-per-node=1
+
+#SBATCH --cpus-per-task=2
+
+#SBATCH --mem=4gb
+
+#SBATCH --time=0:10:00
+
+
+#SBATCH --mail-type=ALL
+
+#SBATCH --mail-user=anthony.nadelko@csiro.au
+
+
+module load fastqc
+
+fastqc -o OSM/CBR/AF_DATASCHOOL/output/nad018 OSM/CBR/AF_DATASCHOOL/input/2019-04-12_Transcritome/CA73YANXX_8_161220_BPO--031_Other_CGAGGCTG-TCTCTCCG_R_161128_SHADIL_LIB2500_M002_R2.fastq.gz
+sleep 120

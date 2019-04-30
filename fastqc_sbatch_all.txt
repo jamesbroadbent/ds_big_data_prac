@@ -23,6 +23,5 @@ module load fastqc
 
 for datafile in /OSM/CBR/AF_DATASCHOOL/input/2019-04-12_Transcritome/*.gz
 do
-    	fastqc -o /OSM/CBR/AF_DATASCHOOL/output/nad018 
-/OSM/CBR/AF_DATASCHOOL/output/nad018/$datafile
+    	fastqc -o /OSM/CBR/AF_DATASCHOOL/output/nad018 /$datafile
 done

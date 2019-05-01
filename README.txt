@@ -3,11 +3,9 @@ This README.txt file for the A&F Dataschool big data practicale describes:
 - the Pearcey input file directory
 - the Pearcey processed ouput file directories
 - the Github remote repository for R, python & Unix scripts and this README.txt file 
-- 
 
 Github remote scripts repository (access requires invitation from James Broadbent, CSIRO ident bro915):
 https://github.com/jamesbroadbent/ds_big_data_prac
-
 
 Gitbash ssh login to Pearcey:
 $ ssh ident@pearcey.hpc.csiro.au
@@ -15,22 +13,25 @@ $ ssh ident@pearcey.hpc.csiro.au
 Raw input file directory on Bowen storage:
 ident@pearcey-login:/OSM/CBR/AF_DATASCHOOL/input/2019-04-12_Transcritome>
 
-Fastqc module processed output file directory on Bowen storage:
-ident@pearcey-login:/OSM/CBR/AF_DATASCHOOL/output/nad018>
+Fastqc processed *.html output file directory on Bowen storage:
+ident@pearcey-login:/OSM/CBR/AF_DATASCHOOL/output/nad018/fastqc_html/
 
-Python & R processed output fiel directory on Bowen Storage:
+Fastqc module processed *.zip output file directory on Bowen storage:
+ident@pearcey-login:/OSM/CBR/AF_DATASCHOOL/output/nad018/fastqc_zip/
+
+Python & R processed output file directory on Bowen Storage:
 ident@pearcey-login:/OSM/CBR/AF_DATASCHOOL/output/bro915
 
 
 
-
+-----------------------------------------------------------------------------
 1. Working together
 In your teams, discuss, and write a plan for, and set up the following:
 
 DIRECTORY STRUCTURE: 
 Where will you store your scripts? 
 
-	Git remote repository (jamesbroadbent), cloned to team members' pearcy home storage and local storage 
+	Git remote repository (jamesbroadbent), cloned to team members' Pearcey home storage and local storage 
 
 	File structure:
 		
@@ -87,6 +88,3 @@ Do you need a README file?
 What will you put inside it?
 	Yes, possibly several. The highest level README.txt (this file) will list directory 
 structures and locations for scripts, raw data, processed data, git repositories
-
-
-

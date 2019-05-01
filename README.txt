@@ -2,10 +2,16 @@ This README.txt file for the A&F Dataschool big data practicale describes:
 - the Pearcey login
 - the Pearcey input file directory
 - the Pearcey processed ouput file directories
-- the Github remote repository for R, python & Unix scripts and this README.txt file 
+- the Github remote repository for R, python & Unix scripts and this README.txt file
+- the data processing workflow
+-----------------------------------------------------
+1. Working Toogether
 
-Github remote scripts repository (access requires invitation from James Broadbent, CSIRO ident bro915):
+Github remote repository for scripts (access requires invitation from James Broadbent, CSIRO ident bro915):
 https://github.com/jamesbroadbent/ds_big_data_prac
+
+Github remote repository cloned to team member pearcey home directories:
+ident@pearcey-login:~>/home/ident/ds_big_data_prac
 
 Gitbash ssh login to Pearcey:
 $ ssh ident@pearcey.hpc.csiro.au
@@ -21,10 +27,47 @@ ident@pearcey-login:/OSM/CBR/AF_DATASCHOOL/output/nad018/fastqc_zip/
 
 Python & R processed output file directory on Bowen Storage:
 ident@pearcey-login:/OSM/CBR/AF_DATASCHOOL/output/bro915
+---------------------------------------------------------
+2. Metadata
+
+---------------------------------------------------------
+3. Process
+
+Fastqc input file processing:
+
+- open sc-launcher.exe then;
+- select services -> remote sessions -> new session -> create new VNC session -> select pearcey i2 -> select window size
+- under 'Application' open terminal emulator
+
+in text editor:
+- open the sbatch file 'fastqc_sbatch_all.txt'
+- edit output directory, email address and job name as required
+- rename and save-as xxxx.txt
+
+in sc-launcher terminal submit sbatch: 
+- sbatch /home/ident/ds_big_data_prac/xxxx.txt
+--------------------------------------------------------
+4. Align
+
+--------------------------------------------------------
+5. Count
+--------------------------------------------------------
+6. Visualisation
+--------------------------------------------------------
+7. Parameter Sweep
+----------------------------------------------------------------------------------------------------
 
 
 
------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
 1. Working together
 In your teams, discuss, and write a plan for, and set up the following:
 

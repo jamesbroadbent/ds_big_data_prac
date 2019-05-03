@@ -38,3 +38,5 @@ Mdf0 <- full_join(meta3, FNinfo3)
 Mdf1 <- inner_join(Mdf0, unique(samples))
 
 head(Mdf1)
+
+write_csv(Mdf1, path = "/OSM/CBR/AF_DATASCHOOL/output/bro915/FilesDF.csv")

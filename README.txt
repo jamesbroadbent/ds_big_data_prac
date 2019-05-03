@@ -30,6 +30,43 @@ ident@pearcey-login:/OSM/CBR/AF_DATASCHOOL/output/bro915
 ---------------------------------------------------------
 2. Metadata
 
+Production of a tidy data frame to keep track of files and meta data:
+
+open a terminal and log into Pearcey, e.g.:
+
+	ssh bro915@pearcey.hpc.csiro.au
+
+	cd /OSM/CBR/AF_DATASCHOOL/input/2019-04-12_Transcritome
+
+	#R samples and meta data to data frame
+	#load R module
+	module load R/3.5.0
+	#start R
+	R
+
+Cut and paste code from Rscipt.r into terminal to generate meta data file from *.csv and *.txt;
+change output directory as needed
+
+Next, run headerEx.py to get the read header information from the fastq files:
+
+	cd /OSM/CBR/AF_DATASCHOOL/input/2019-04-12_Transcritome
+
+	module load python/3.7.2
+
+	python headerEx.py
+
+Bring the read header and file meta data together into a tidy data frame:
+
+	cd /OSM/CBR/AF_DATASCHOOL/output/bro915									
+	#R samples and meta data to data frame
+	#load R module
+	module load R/3.5.0
+	#start R
+	R
+	
+Cut and paste the code from Make_tidyDF.r to bring the data together into a tidy data frame
+change output directory as needed
+
 ---------------------------------------------------------
 3. Process
 

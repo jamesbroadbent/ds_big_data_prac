@@ -1,0 +1,27 @@
+#!/bin/bash -l
+
+#SBATCH --job-name=big_data_prac
+
+#SBATCH --nodes=1
+
+#SBATCH --ntasks-per-node=1
+
+#SBATCH --cpus-per-task=2
+
+#SBATCH --mem=4gb
+
+#SBATCH --time=2:00:00
+
+
+#SBATCH --mail-type=ALL
+
+#SBATCH --mail-user=anthony.nadelko@csiro.au
+
+
+
+module load fastqc
+
+for datafile in /OSM/CBR/AF_DATASCHOOL/input/2019-04-12_Transcritome/*.gz
+do
+    	fastqc -o /OSM/CBR/AF_DATASCHOOL/output/nad018 /$datafile
+done

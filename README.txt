@@ -1,8 +1,71 @@
+This README.txt file for the A&F Dataschool big data practicale describes:
+- the Pearcey login
+- the Pearcey input file directory
+- the Pearcey processed ouput file directories
+- the Github remote repository for R, python & Unix scripts and this README.txt file
+- the data processing workflow
+-----------------------------------------------------
+1. Working Toogether
 
-SSH bro915@pearcey.csiro.au
+Github remote repository for scripts (access requires invitation from James Broadbent, CSIRO ident bro915):
+https://github.com/jamesbroadbent/ds_big_data_prac
+
+Github remote repository cloned to team member pearcey home directories:
+ident@pearcey-login:~>/home/ident/ds_big_data_prac
+
+Gitbash ssh login to Pearcey:
+$ ssh ident@pearcey.hpc.csiro.au
+
+Raw input file directory on Bowen storage:
+ident@pearcey-login:/OSM/CBR/AF_DATASCHOOL/input/2019-04-12_Transcritome>
+
+Fastqc processed *.html output file directory on Bowen storage:
+ident@pearcey-login:/OSM/CBR/AF_DATASCHOOL/output/nad018/fastqc_html/
+
+Fastqc module processed *.zip output file directory on Bowen storage:
+ident@pearcey-login:/OSM/CBR/AF_DATASCHOOL/output/nad018/fastqc_zip/
+
+Python & R processed output file directory on Bowen Storage:
+ident@pearcey-login:/OSM/CBR/AF_DATASCHOOL/output/bro915
+---------------------------------------------------------
+2. Metadata
+
+---------------------------------------------------------
+3. Process
+
+Fastqc input file processing:
+
+- open sc-launcher.exe then;
+- select services -> remote sessions -> new session -> create new VNC session -> select pearcey i2 -> select window size
+- under 'Application' open terminal emulator
+
+in text editor:
+- open the sbatch file 'fastqc_sbatch_all.txt'
+- edit output directory, email address and job name as required
+- rename and save-as xxxx.txt
+
+in sc-launcher terminal submit sbatch: 
+- sbatch /home/ident/ds_big_data_prac/xxxx.txt
+--------------------------------------------------------
+4. Align
+
+--------------------------------------------------------
+5. Count
+--------------------------------------------------------
+6. Visualisation
+--------------------------------------------------------
+7. Parameter Sweep
+----------------------------------------------------------------------------------------------------
 
 
-bro915@pearcey-login:/OSM/CBR/AF_DATASCHOOL/input/2019-04-12_Transcritome>
+
+
+
+
+
+
+
+
 
 
 1. Working together
@@ -11,16 +74,17 @@ In your teams, discuss, and write a plan for, and set up the following:
 DIRECTORY STRUCTURE: 
 Where will you store your scripts? 
 
-	Git remote repository (jamesbroadbent), cloned to team members' pearcy home storage   
+	Git remote repository (jamesbroadbent), cloned to team members' Pearcey home storage and local storage 
 
 	File structure:
-		ident@pearcey-login: /home/ident/big_data_prac/scripts
+		
 
 Where is the raw data?
 	/OSM/CBR/AF_DATASCHOOL/input/2019-04-12_Transcritome  (Bowen storage)
 
 What about intermediate analyses?
-	/OSM/CBR/AF_DATASCHOOL/output/
+	/OSM/CBR/AF_DATASCHOOL/output/bro915
+	/OSM/CBR/AF_DATASCHOOL/output/nad018
 
 
 How do the project directory structures we have used previously (e.g. 
@@ -33,7 +97,7 @@ in a Bowen storage output folder.
 
 in GIT/GITHUB: 
 How will you collaborate on code?
-	Separate scripts for individual work - push/pull from pearcey home storage
+	Separate scripts for individual work - push/pull from Github remote to pearcey home storage
 	A project script for bringing together separate parts
 	A shared readme
 
@@ -51,17 +115,15 @@ How often, and when, will you push?
 	After each significant development stage or at end of each day 
 
 Will you each keep local copies of a remote repo?
-	Yes, some files such as readme can be edited/stored locally, pushed to remote, and 
-pulled to Pearcey home storage
-
+	Yes, remote repo can be cloned to Pearcey home and local PC storages
 
 	If so, where will your local copies be?
 	Any local copies will be in a project directory either on a managed network drive or 
 local hard drive
  
 Where will you keep a record of the workflow you decide on?
-	In this README file, located on git remote repository and cloned to pearcey home 
-storages 
+	In this README file, located on git remote repository and cloned to Pearcey home 
+and/or local PC storages 
 
 
 README: 
@@ -69,6 +131,3 @@ Do you need a README file?
 What will you put inside it?
 	Yes, possibly several. The highest level README.txt (this file) will list directory 
 structures and locations for scripts, raw data, processed data, git repositories
-
-
-

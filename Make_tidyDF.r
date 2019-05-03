@@ -13,6 +13,12 @@ files <- read_csv("FilesDF.csv")
 
 files$filenames <- gsub(".gz", "", files$filenames)
 
-tidyDF <- merge(files, list_file, by=c("filename"))
+tidyDF <- merge(files, list_file, by=c("filenames"))
 
 write_csv(tidyDF, path = "/OSM/CBR/AF_DATASCHOOL/output/bro915/TidyDF.csv")
+
+q()
+
+n
+
+
